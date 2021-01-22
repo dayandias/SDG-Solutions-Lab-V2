@@ -18,6 +18,12 @@ a {
 a:hover{
     color: skyblue;
 }
+/* Center items class style */
+.center{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 /* Welcome to the UN */
 #welcome-text{
     padding-top: 0.5%;
@@ -45,16 +51,21 @@ a:hover{
 
     /* Parallax Scrolling */
     height: auto;
+    
+}
+/* Menu */
+#menu{
+    background-image: url("https://miro.medium.com/max/4000/1*CFmdigYyZxGZ362nyvwU9g.png");
+    min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /* Menu options */
 .menu-options{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -94,12 +105,89 @@ a:hover{
     color:rgb(33, 146, 245);
 }
 
+
+/* Title Area */
+#title-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#title{
+    padding-left: 10%;
+    padding-top: 3%;
+    font-size:xx-large;
+    color: azure;
+}
+#title-sub{
+    padding-left: 10%;
+    padding-bottom: 3%;
+    font-size:x-large;
+    color: azure;
+}
 /* Escap Logo */
 #escap-logo-logo{
-    width: 250px;
-    position: absolute;
-    top: 30%;
-    left: 40%;
+    width: 200px;
     opacity: 60%;
+    padding-bottom: 10%;
+    padding-top: 10%;
 }
 
+/* main content area */
+#index-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+    background-image: url("./Resources/Main-content-bg-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.index-cont-sub{
+    border: grey solid 1px;
+    margin: 5%;
+    border-radius: 4%;
+    overflow: hidden;
+    /* background-color: khaki; */
+}
+.main-cont-img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 4%;
+}
+#visible{
+    position: relative;
+    top: -105.5%;
+    color: azure;
+    background-color: #151421;
+    height: 110%;
+    text-align: center;
+    justify-self:center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 4%;
+}
+.index-cont-sub:hover #visible {
+    opacity: .9;
+    transition: 0.3s ease-in-out ;
+}
+.visible-cont{
+    position: absolute;
+    padding-top: 10%;   
+}
+.visible-cont-more{
+    position: absolute;
+    padding-top: 60%;
+    padding-left: 80%;
+    color: rgb(253, 253, 255);
+}
+.footer-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 1%;
+    background-color:  rgb(139, 139, 139);
+    padding: 1%;
+
+}
