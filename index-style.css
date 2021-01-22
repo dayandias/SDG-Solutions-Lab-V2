@@ -2,61 +2,104 @@ html{
     height: 100%;
 }
 body{
-    margin: 0;
-}
-* {
-    box-sizing: border-box;
+    width: 100%;
+    margin: 0%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
 }
 .padder{
     padding: 3%;
 }
-/* background image styles */
-
-.bg-img {
-  /* The image used */
-  background-image: url("https://www.volunteeringsolutions.com/blog/wp-content/uploads/2018/07/teen-volunteer-work.jpg");
-
-  min-height: 800px;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  
-  /* Position the navbar */
-  position: relative;
+a {
+    text-decoration: none;
+    color: black;
 }
-
-/* Position the navbar container inside the image */
-.container {
-    position: absolute;
+a:hover{
+    color: skyblue;
+}
+/* Welcome to the UN */
+#welcome-text{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: rgb(139, 139, 139);
+    font-size: small;
+    height: 8px;
+    align-items: center;
+    text-align: center;
+}
+#blue-line{
+    background:#009edb;
     width: 100%;
-}
-/* The navbar */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    opacity: 50%;
-}
-/* Navbar links */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    height: 3px;
 }
 
-.escap-logo{
-   /* Need a transparent logo */
-    opacity: 50%;
-    
+/* background image styles */
+#bg-img-img {
+    width: 100%;
+    min-height: auto;
+    position: absolute;
+    top: 0%;
+    opacity: 100%;
+    z-index: -1;
+
+    /* Parallax Scrolling */
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* Menu options */
+.menu-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+} 
+.menu-options div{
+    /* border: solid 1px black; */
+    background-repeat:no-repeat;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.about-us{
+    background-color: rgb(63, 63, 63);
+    padding: 2%;
+    opacity: 60%;
+}
+.menu-options-image {
+    width: 15%;
+}
+.menu-options-text{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+}
+
+.about-us:hover {
+    background-color: #111314;
+    transition: ease-in;
+    transition-duration: .2s;
+    opacity: 100%;  
+}
+.about-us:hover h5{
+    color:rgb(33, 146, 245);
+}
+
+/* Escap Logo */
+#escap-logo-logo{
+    width: 250px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    opacity: 60%;
+}
+

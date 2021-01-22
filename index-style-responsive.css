@@ -1,0 +1,17 @@
+@media screen and (max-width: 1000px){
+    .menu-options{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    } 
+    #welcome-text{
+        font-size:8px;
+    }
+    /* Escap Logo */
+    #escap-logo-logo{
+      
+}
+}
